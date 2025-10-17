@@ -5,8 +5,8 @@ const { addonBuilder, serveHTTP } = pkg;
 
 //import { addonBuilder, serveHTTP } from "stremio-addon-sdk";
 import axios from "axios";
-const addon_username = "erik612"
-const addon_password = "filmykodi"
+const addon_username = "pupo"
+const addon_password = "kacenka11"
 let addon_cookie = ""
 
 const builder = new addonBuilder({
@@ -419,6 +419,7 @@ async function search(query, video_details = true)
 
 await login()
 serveHTTP(builder.getInterface(), { port: process.env.PORT || 7000 });
+
 
 
 
